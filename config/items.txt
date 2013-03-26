@@ -1,0 +1,10 @@
+id=i0001,name=Item1,n:language=language-Hindi,gener=Horror,tags=sharukh dance horror
+id=i0002,name=Item2,n:language=language-English,gener=Comedy,tags=amir comedy
+id=i0003,name=Item3,n:language=language-English,gener=Thriller,tags=akshay dance thriller
+id=i0004,name=Item4,n:language=language-Hindi,gener=Comedy,tags=sharukh comedy
+id=i0005,name=Item5,n:language=language-English,gener=Suspense,tags=sharukh dance suspense
+id=i0006,name=Item6,n:language=language-Hindi,gener=Drama,tags=amir drama
+id=i0007,name=Item7,n:language=language-Marathi,gener=Comedy,tags=sharukh dance comedy
+id=i0008,name=Item8,n:language=language-Hindi,gener=Thriller,tags=amir thriller
+id=i0009,name=Item9,n:language=language-Hindi,gener=Drama,tags=akshay drama
+id=i00010,name=Item10,n:language=language-Marathi,gener=Suspense,tags=sharukh dance suspense
