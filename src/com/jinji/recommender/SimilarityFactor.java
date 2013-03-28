@@ -60,4 +60,12 @@ abstract public class SimilarityFactor {
     public void setStartIndex(String startIndex) {
         this.startIndex = startIndex;
     }
+
+    public enum Type {
+        UserToUser,
+        ItemToItem,
+        ItemToUser,
+        UserToItem;
+
+    }
 }

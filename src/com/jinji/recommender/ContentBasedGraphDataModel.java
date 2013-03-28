@@ -21,13 +21,6 @@ public class ContentBasedGraphDataModel implements GraphDataModel{
     private List<SimilarityFactor> itemSimilarity = new ArrayList<SimilarityFactor>();
     private List<SimilarityFactor> userItemSimilarity = new ArrayList<SimilarityFactor>();
 
-
-
-    public ContentBasedGraphDataModel(GraphDb db) {
-        this.datasource =db;
-    }
-
-
     public void setDatasource(GraphDb datasource) {
         this.datasource = datasource;
     }
@@ -90,4 +83,11 @@ public class ContentBasedGraphDataModel implements GraphDataModel{
         userItemSimilarity.add(userItemSim);
     }
 
+    public void registerSimilarityFactor(SimilarityFactor.Type userToUser, int i, SimilarityFactorRelation similarityFactorRelation) {
+
+
+    }
+
+    public void createSimilarityFactor(SimilarityFactor.Type userToUser, int i, SimilarityFactor similarityFactorRelation) {
+    }
 }

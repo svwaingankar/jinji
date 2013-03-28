@@ -1,5 +1,6 @@
 package com.jinji.test.neo4j;
 
+import com.jinji.graph.GraphDb;
 import com.jinji.recommender.*;
 
 import java.util.List;
@@ -13,42 +14,19 @@ import java.util.List;
 public class JinjiRecommenderEngine {
 
     private RecommendationAlgorithm collaborativeFiltering;
-    private SimpleGraphDataModel dataModel;
+    private GraphDb datasource;
 
-
-    public void addUserSimilarityCriteria(SimilarityFactor userSim, int w) {
-        userSim.setWeight(w);
-        userSim.setId("j_u_"+userSimilarity.size());
-        userSim.setModel(this);
-        userSim.setStartIndex(user);
-        userSim.setEndIndex(user);
-
-        userSimilarity.add(userSim);
-
+    public void setDatasource(GraphDb datasource) {
+        this.datasource = datasource;
     }
 
-    public void addItemSimilarityCriteria(SimilarityFactor itemSim, int w) {
-        itemSim.setWeight(w);
-        itemSim.setId("j_i_"+userSimilarity.size());
-        itemSim.setModel(this);
-        itemSim.setStartIndex(item);
-        itemSim.setEndIndex(item);
-
-        userSimilarity.add(itemSim);
-    }
-
-    public void addUserItemSimilarityCriteria(SimilarityFactor userItemSim, int w) {
-        userItemSim.setWeight(w);
-        userItemSim.setId("j_i_"+userSimilarity.size());
-        userItemSim.setModel(this);
-        userItemSim.setStartIndex(user);
-        userItemSim.setEndIndex(item);
-        userSimilarity.add(userItemSim);
+    public GraphDb getDatasource() {
+        return datasource;
     }
 
     public void getRecommendation(String user) throws Exception {
 
-        for(SimilarityFactor p:userSimilarity){
+/*        for(SimilarityFactor p:userSimilarity){
             p.calculate();
         }
         for(SimilarityFactor p:itemSimilarity){
@@ -56,7 +34,7 @@ public class JinjiRecommenderEngine {
         }
         for(SimilarityFactor p:userItemSimilarity){
             p.calculate();
-        }
+        }*/
     }
 
 
@@ -68,20 +46,12 @@ public class JinjiRecommenderEngine {
         return collaborativeFiltering;
     }
 
-
     public List<String> getRecommmendations(String id1002, int i, int i1) {
+        return null;
     }
 
-    public void addAlgorithm(JinjiRecommendationAlgorithm algo) {
-        //To change body of created methods use File | Settings | File Templates.
-    }
-
-    public void setDataModel(SimpleGraphDataModel dataModel) {
-        this.dataModel = dataModel;
-    }
-
-    public SimpleGraphDataModel getDataModel() {
-        return dataModel;
+    public void addAlgorithm(JinjiRecommendationAlgorithm algo, int i) {
+        algo.
     }
 
     public RecommendationResult getRecommmendationsWithTrace(String id1002, int i, int i1) {

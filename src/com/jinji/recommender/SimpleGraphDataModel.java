@@ -15,12 +15,6 @@ public class SimpleGraphDataModel implements GraphDataModel{
     private String item;
     private String primaryRelation;
 
-
-    public SimpleGraphDataModel(GraphDb db) {
-        this.datasource =db;
-    }
-
-
     public void setDatasource(GraphDb datasource) {
         this.datasource = datasource;
     }

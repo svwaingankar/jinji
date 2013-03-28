@@ -26,7 +26,7 @@ public class SimplePathPresence extends SimilarityFactor {
     @Override
     public void calculate() throws Exception {
 
-        Neo4jGraphDb graph = getModel().getDatasource() ;
+        Neo4jGraphDb graph = (Neo4jGraphDb) getModel().getDatasource();
         Transaction tx= graph.getDB().beginTx();
 
         try {
