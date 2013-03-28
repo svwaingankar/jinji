@@ -1,9 +1,7 @@
 package com.jinji.test.neo4j;
 
-import com.jinji.graph.GraphDb;
-import com.jinji.recommender.SimilarityFactor;
+import com.jinji.recommender.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,42 +12,14 @@ import java.util.List;
  */
 public class JinjiRecommenderEngine {
 
-    private GraphDb datasource;
-    private String user;
-    private String item;
-    private List<SimilarityFactor> userSimilarity = new ArrayList<SimilarityFactor>();
-    private List<SimilarityFactor> itemSimilarity = new ArrayList<SimilarityFactor>();
-    private List<SimilarityFactor> userItemSimilarity = new ArrayList<SimilarityFactor>();
+    private RecommendationAlgorithm collaborativeFiltering;
+    private SimpleGraphDataModel dataModel;
 
-
-    public void setDatasource(GraphDb datasource) {
-        this.datasource = datasource;
-    }
-
-    public GraphDb getDatasource() {
-        return datasource;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setItem(String item) {
-        this.item = item;
-    }
-
-    public String getItem() {
-        return item;
-    }
 
     public void addUserSimilarityCriteria(SimilarityFactor userSim, int w) {
         userSim.setWeight(w);
         userSim.setId("j_u_"+userSimilarity.size());
-        userSim.setEngine(this);
+        userSim.setModel(this);
         userSim.setStartIndex(user);
         userSim.setEndIndex(user);
 
@@ -60,7 +30,7 @@ public class JinjiRecommenderEngine {
     public void addItemSimilarityCriteria(SimilarityFactor itemSim, int w) {
         itemSim.setWeight(w);
         itemSim.setId("j_i_"+userSimilarity.size());
-        itemSim.setEngine(this);
+        itemSim.setModel(this);
         itemSim.setStartIndex(item);
         itemSim.setEndIndex(item);
 
@@ -70,7 +40,7 @@ public class JinjiRecommenderEngine {
     public void addUserItemSimilarityCriteria(SimilarityFactor userItemSim, int w) {
         userItemSim.setWeight(w);
         userItemSim.setId("j_i_"+userSimilarity.size());
-        userItemSim.setEngine(this);
+        userItemSim.setModel(this);
         userItemSim.setStartIndex(user);
         userItemSim.setEndIndex(item);
         userSimilarity.add(userItemSim);
@@ -90,5 +60,31 @@ public class JinjiRecommenderEngine {
     }
 
 
+    public void setCollaborativeFiltering(RecommendationAlgorithm collaborativeFiltering) {
+        this.collaborativeFiltering = collaborativeFiltering;
+    }
 
+    public RecommendationAlgorithm getCollaborativeFiltering() {
+        return collaborativeFiltering;
+    }
+
+
+    public List<String> getRecommmendations(String id1002, int i, int i1) {
+    }
+
+    public void addAlgorithm(JinjiRecommendationAlgorithm algo) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void setDataModel(SimpleGraphDataModel dataModel) {
+        this.dataModel = dataModel;
+    }
+
+    public SimpleGraphDataModel getDataModel() {
+        return dataModel;
+    }
+
+    public RecommendationResult getRecommmendationsWithTrace(String id1002, int i, int i1) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
