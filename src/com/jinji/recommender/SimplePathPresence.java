@@ -3,6 +3,8 @@ package com.jinji.recommender;
 import com.jinji.graph.GraphDb;
 import com.jinji.graph.neo4j.QueryRegistry;
 import com.jinji.graph.neo4j.Neo4jGraphDb;
+import com.jinji.graph.neo4j.datamodel.SimpleNodePropertyNeo4jImpl;
+import com.jinji.graph.neo4j.datamodel.SimplePathPresenceNeo4jImpl;
 import org.neo4j.graphdb.Transaction;
 
 import java.util.HashMap;
@@ -27,25 +29,8 @@ public class SimplePathPresence extends SimilarityFactor {
     @Override
     public void calculate(GraphDb datasource) throws Exception {
 
-        Neo4jGraphDb graph = (Neo4jGraphDb) datasource;
-        Transaction tx= graph.getDB().beginTx();
-
-        try {
-
-            Map<String, Object> params = new HashMap<String, Object>();
-            params.put("startIndex",startIndex);
-            params.put("endIndex",endIndex);
-
-            graph.executeQuery(QueryRegistry.simplePathPresenceSimilarityCalc(path), params);
-            tx.success();
+        if(datasource.getDataSourceId().equals("Neo4j")){
+            new SimplePathPresenceNeo4jImpl(path).calculate(datasource);
         }
-        catch(Exception e) {
-            tx.failure();
-            throw e;
-        }
-        finally {
-            tx.finish();
-        }
-
     }
 }

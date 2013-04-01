@@ -3,6 +3,7 @@ package com.jinji.recommender;
 import com.jinji.graph.GraphDb;
 import com.jinji.graph.neo4j.QueryRegistry;
 import com.jinji.graph.neo4j.Neo4jGraphDb;
+import com.jinji.graph.neo4j.datamodel.SimpleNodePropertyNeo4jImpl;
 import org.neo4j.graphdb.Transaction;
 
 import java.util.HashMap;
@@ -25,24 +26,10 @@ public class SimpleNodeProperty extends SimilarityFactor {
     @Override
     public void calculate(GraphDb datasource) throws Exception {
 
-        Neo4jGraphDb graph = (Neo4jGraphDb) datasource;
-        Transaction tx= graph.getDB().beginTx();
+        if(datasource.getDataSourceId().equals("Neo4j")){
+            new SimpleNodePropertyNeo4jImpl(property).calculate(datasource);
+        }
 
-        try {
-
-            Map<String, Object> params = new HashMap<String, Object>();
-            params.put("indexName",startIndex);
-            params.put("property",property);
-            graph.executeQuery(QueryRegistry.simpleNodePropertySimilarityCalc(), params);
-            tx.success();
-        }
-        catch(Exception e) {
-            tx.failure();
-            throw e;
-        }
-        finally {
-            tx.finish();
-        }
     }
 
     public String getProperty() {
