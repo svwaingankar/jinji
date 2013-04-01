@@ -1,0 +1,61 @@
+<project name="Analytics" default="dist" basedir=".">
+    <property file="build.properties"/>
+    <target name="clean" description="clean up">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+	
+    <target name="init" depends="clean">
+        <tstamp/>
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
+        <mkdir dir="${dist}/lib"/>
+    </target>
+
+    <target name="compile" depends="init" description="compile the source ">
+        <javac srcdir="${src}" destdir="${build}" debug="true">
+            <classpath>
+                <fileset dir="lib">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="dist" depends="compile" description="generate the distribution">
+        <copy todir="${dist}/lib">
+            <fileset dir="lib">
+                <exclude name="**/junit.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${dist}">
+            <fileset dir="${config}">
+                <exclude name="**/web.xml"/>
+                <exclude name="**/test*.xml"/>
+                <exclude name="**/application.properties"/>
+            </fileset>
+        </copy>
+        <property environment="env"/>
+        <property name="build_number" value="${env.BUILD_NUMBER}"/>
+        <echo message="Build number is ${build_number}"/>
+        <propertyfile file="${dist}/build.properties" comment="Build Information File - DO NOT CHANGE">
+            <entry key="build.num" value="${build_number}"/>
+            <entry key="build.date"
+                   type="date"
+                   value="now"
+                   pattern="dd-MM-yyyy"/>
+        </propertyfile>
+        <jar jarfile="${dist}/lib/jinji-platform.jar" basedir="${build}"/>
+        <war destfile="${dist}/jinji.war" webxml="${config}/web.xml">
+            <fileset dir="web"/>
+            <lib dir="dist/lib">
+                <include name="**/*.jar"/>
+            </lib>
+            <classes dir="dist">
+                <include name="**/*.xml"/>
+                <include name="**/quartz.properties"/>
+                <include name="**/build.properties"/>
+            </classes>
+        </war>
+    </target>
+</project>

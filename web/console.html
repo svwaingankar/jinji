@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by Luanne -->
+
+<head>
+    <title>Analytics API Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/analytics/css/bootstrap.css" rel="stylesheet" media="screen">
+    <script src="/analytics/js/jquery-1.8.2-min.js"></script>
+    <script src="/analytics/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='/analytics/js/knockout-2.2.0.js'></script>
+
+</head>
+<body>
+<h1>Analytics API Console</h1>
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li class="nav-header">Estimation</li>
+                <li><a href="#" data-bind="click: function(data, event) { apiSelected('OfferDistribution', data, event) }">OfferDistribution</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">Recommendations</li>
+                <li><a href="#" data-bind="click: function(data, event) { apiSelected('Offers', data, event) }">Offers</a></li>
+            </ul>
+        </div>
+        <div class="span5" id="offerDistribution">
+            <form  data-bind="visible: showForm('OfferDistribution'), submit: sendRequest" >
+                <fieldset>
+                    <legend data-bind="text: fullUrl"></legend>
+                    <label>Merchant IDs (comma separated)</label>
+                    <input type="text" name="merchantId" id="merchantId">
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="favoriteSellers" id="favoriteSellers" value="true"> Included in Favorite Sellers
+                    </label>
+                    <label>Max Distribution Count</label>
+                    <input type="text" name="maxDistributionCount" id="maxDistributionCount">
+                    <br/>
+                    <select name="demographicType" id="demographicType">
+                        <option value="area">Areas</option>
+                        <option value="pin">Pincodes</option>
+                        <option value="city">Cities</option>
+                    </select>
+                    <input type="text" name="demographic" id="demographic">
+                    <br/>
+                    <button type="submit"  class="btn btn-large btn-primary">Submit</button>
+                    <button type="reset"  class="btn btn-large">Reset</button>
+                </fieldset>
+            </form>
+            <form  data-bind="visible: showForm('Offers'), submit: sendRequest">
+                <fieldset>
+                    <legend data-bind="text: url"></legend>
+                    <label>Customer ID</label>
+                    <input type="text" name="offRec-customerId" id="offRec-customerId">
+
+                    <button type="submit"  class="btn btn-large btn-block btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div class="span5" id="output" data-bind="visible: showResponse">
+            <legend>Response</legend>
+            <code>
+                <span data-bind="text: response"></span>
+            </code>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span10 offset3"  data-bind="visible: showRequest">
+            <legend>Request</legend>
+            <code>
+                <span data-bind="text: request"></span>
+            </code>
+        </div>
+    </div>
+</div>
+
+<script>
+    var appUrl="http://localhost:8080/analytics";
+    var authUser="CustomerUX";
+    var authPass="pwd";
+    var authAppId=301;
+
+    var requestSuccess=function(data) {
+        console.log(data);
+        model.response(data);
+        model.showResponse(true);
+        model.showRequest(true);
+    }
+
+    var requestError=function(xhr, textStatus) {
+        model.response(xhr.status + "<br/>" + xhr.responseText);
+        model.showResponse(true);
+        model.showRequest(true);
+    }
+
+    var sendDist=function() {
+        var success=requestSuccess;
+        var error=requestError;
+        var postBody="<offerDemographic>";
+        var merchantIds = $("#merchantId").val();
+
+        if(merchantIds.length>0) {
+            postBody+="<merchantIds>";
+            var merchantArray=merchantIds.split(",");
+            for(var m=0;m < merchantArray.length; m++) {
+                postBody+="<merchantId>" + merchantArray[m] + "</merchantId>";
+            }
+            postBody+="</merchantIds>";
+        }
+
+        var demographicType=$("#demographicType").val();
+        var demographic=$("#demographic").val();
+        if(demographicType=="area") {
+            postBody+="<targetAreas>" + demographic + "</targetAreas>";
+        }
+        if(demographicType=="pin") {
+            postBody+="<targetPins>" + demographic + "</targetPins>";
+        }
+        if(demographicType=="city") {
+            postBody+="<targetCities>" + demographic + "</targetCities>";
+        }
+        var maxCount = $("#maxDistributionCount").val();
+        if(maxCount>0) {
+            postBody+="<maxDistributionCount>" + maxCount + "</maxDistributionCount>";
+        }
+        if($("#favoriteSellers").is(':checked')) {
+            postBody+="<favoriteSellersList>true</favoriteSellersList>";
+        }
+        else {
+            postBody+="<favoriteSellersList>false</favoriteSellersList>";
+        }
+        postBody+= "</offerDemographic>";
+        model.request(postBody);
+        $.ajax({
+            type:"POST",
+            url:model.fullUrl(),
+            data: postBody,
+            success:success,
+            error:error,
+            contentType: "application/xml",
+            dataType: "text",
+            headers: {"auth_user": authUser, "auth_pass": authPass, "auth_appId":authAppId}
+        });
+
+    };
+
+    var sendOff =function() {
+        var success=requestSuccess;
+        var error=requestError;
+        var customerId = $("#offRec-customerId").val().trim();
+        var getBody=appUrl + "/api/customer/" + customerId + "/offerRecommendations";
+        model.request(getBody);
+        $.ajax({
+            type:"GET",
+            url:getBody,
+            success:success,
+            error:error,
+            contentType: "application/xml",
+            dataType: "text",
+            headers: {"auth_user": authUser, "auth_pass": authPass, "auth_appId":authAppId}
+        });
+    };
+
+    function consoleModel() {
+        var self=this;
+
+        self.apiList = ko.observableArray([
+        { name: 'OfferDistribution', url:'/api/estimate/offerDistribution',formId: 'offerDistribution', type: 'estimate', send:sendDist},
+        { name: 'Offers', url:'/api/customer/{id}/offerRecommendations',formId: 'offerRecommendation', type: 'recommendation', send:sendOff }
+
+        ]);
+
+        self.url=ko.observable();
+
+        self.fullUrl=ko.computed(function() {
+            return appUrl + self.url();
+        }, this);
+
+        self.apiName=ko.observable("none");
+        self.showForm=function(name) {
+            console.log(name);
+            console.log(self.apiName());
+            if(self.apiName()==name) {
+                return true;
+            }
+            return false;
+        };
+
+        self.showOutput=ko.observable(false);
+        self.showRequest=ko.observable(false);
+        self.sendFn;
+
+        self.apiSelected=function(apiName,data,event) {
+          for(var i=0; i < self.apiList().length; i++) {
+            if(self.apiList()[i].name==apiName) {
+                self.url(self.apiList()[i].url);
+                self.apiName(apiName);
+                self.sendFn=self.apiList()[i].send;
+                self.showResponse(false);
+            }
+          }
+        };
+
+        self.sendRequest=function() {
+            console.log($('#merchantId').val());
+            self.sendFn();
+        };
+
+        self.response=ko.observable();
+        self.request=ko.observable();
+
+        self.showResponse=ko.observable(false);
+    }
+
+
+    var model=new consoleModel();
+
+
+
+
+    ko.applyBindings(model);
+</script>
+</body>
+</html>
