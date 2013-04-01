@@ -1,7 +1,6 @@
 package com.jinji.graph.neo4j;
 
 import com.jinji.graph.GraphDb;
-import com.jinji.graph.QueryRegistry;
 import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.cypher.javacompat.ExecutionResult;
 import org.neo4j.graphdb.GraphDatabaseService;
@@ -66,4 +65,8 @@ public class Neo4jGraphDb implements GraphDb {
     }
 
 
+    @Override
+    public String getDataSourceId() {
+        return "Neo4j";
+    }
 }

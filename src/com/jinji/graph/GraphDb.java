@@ -8,8 +8,6 @@ package com.jinji.graph;
  */
 public interface GraphDb {
 
-
-
-
+    public String getDataSourceId();
 
 }

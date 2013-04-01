@@ -1,4 +1,4 @@
-package com.jinji.graph;
+package com.jinji.graph.neo4j;
 
 public enum IndexType {
 

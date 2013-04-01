@@ -7,7 +7,28 @@ package com.jinji.recommender;
  * Time: 12:09 PM
  */
 public class SimilarityFactorRelation {
-    public SimilarityFactorRelation(String relationShipName, String weight) {
-        //To change body of created methods use File | Settings | File Templates.
+
+    String id;
+    String property;
+
+    public SimilarityFactorRelation(String relationshipname, String prop) {
+        this.id = relationshipname;
+        this.property = prop;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getProperty() {
+        return property;
+    }
+
+    public void setProperty(String property) {
+        this.property = property;
     }
 }

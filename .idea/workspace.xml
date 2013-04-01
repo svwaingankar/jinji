@@ -2,43 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f731d41e-4f54-4647-ab63-3243dcf3bc41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/IndexType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/QueryRegistry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jinji/graph/RecommendationGenericRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/ContentBasedGraphDataModel.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/ContentBasedGraphDataModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/ItemBasedCollaborativeAlgo.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/ItemBasedCollaborativeAlgo.java" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\ContentBasedGraphDataModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\GraphDataModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\ItemBasedCollaborativeAlgo.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\JinjiRecommendationAlgorithm.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\SimpleContentBasedAlgo.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\SimpleGraphDataModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\recommender\UserBasedCollaborativeAlgo.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/NumericNodeProperty.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/NumericNodeProperty.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleGraphDataModel.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleGraphDataModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorRelation.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorRelation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/TagComparator.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/TagComparator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\graph\IndexType.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/IndexType.java" />
+      <change type="MOVED" beforePath="D:\shantaram\jinji\trunk\src\com\jinji\graph\QueryRegistry.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/QueryRegistry.java" />
     </list>
     <ignored path="jinji.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/RelationType.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363884421327" ignored="false" />
-    <file path="/fragment.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364452789657" ignored="false" />
+    <file path="/fragment.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364753522094" ignored="false" />
     <file path="/TestItemBaseRecommendation.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364411928293" ignored="false" />
-    <file path="/Neo4jGraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363977983914" ignored="false" />
+    <file path="/Neo4jGraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364748141409" ignored="false" />
     <file path="D:/code/reco4j/reco4j-neo4j-master/src/main/java/org/reco4j/graph/neo4j/Neo4jGraph.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363921104772" ignored="false" />
     <file path="/neo4jgraph.properties" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363921764888" ignored="false" />
     <file path="/Neo4jGraphUtil.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364128023794" ignored="false" />
     <file path="/Neo4jGraphException.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363962920940" ignored="false" />
     <file path="/NumberComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364099655145" ignored="false" />
     <file path="/TagComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364058808179" ignored="false" />
-    <file path="/JinjiRecommenderEngine.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364450622881" ignored="false" />
+    <file path="/JinjiRecommenderEngine.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747478260" ignored="false" />
     <file path="/BinaryComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364099790309" ignored="false" />
     <file path="/PropertyComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364233693810" ignored="false" />
     <file path="/QueryRegistry.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364390088578" ignored="false" />
@@ -65,18 +63,25 @@
     <file path="/ItemBasedCollaborative.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364409627360" ignored="false" />
     <file path="/JingiDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364410120819" ignored="false" />
     <file path="/SimilarityFactor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364454060441" ignored="false" />
-    <file path="/ContentBasedGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364453454073" ignored="false" />
-    <file path="/SimpleContentBasedAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364411757822" ignored="false" />
-    <file path="/ItemBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364450809906" ignored="false" />
-    <file path="/TestRecommendationConfigurations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364454464788" ignored="false" />
+    <file path="/ContentBasedGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364752957595" ignored="false" />
+    <file path="/SimpleContentBasedAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364498275757" ignored="false" />
+    <file path="/ItemBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364748055583" ignored="false" />
+    <file path="/TestRecommendationConfigurations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364749172235" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/config/quartz_data.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/CustomerRecommendations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/analytics/recommendations/TestLocationCriteriaProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/domain/offer/Offer.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/xmlparser/TestOfferImport_IDS.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/setup/Setup.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
-    <file path="/UserBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364449648162" ignored="false" />
-    <file path="/SimilarityFactorRelation.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364453199532" ignored="false" />
+    <file path="/UserBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364498227261" ignored="false" />
+    <file path="/SimilarityFactorRelation.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364501017129" ignored="false" />
+    <file path="/JinjiRecommendationAlgorithm.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747839641" ignored="false" />
+    <file path="/HybridCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364498290816" ignored="false" />
+    <file path="/SimilarityFactorModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364752708396" ignored="false" />
+    <file path="/SimpleGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364749724751" ignored="false" />
+    <file path="/GraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364739194999" ignored="false" />
+    <file path="/GraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747731292" ignored="false" />
+    <file path="/ItemBasedCollaborativeAlgoNeo4jImpl.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747987969" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,22 +96,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java" line="20" class="com.jinji.test.neo4j.TestSimpleNodeProperty" package="com.jinji.test.neo4j">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -141,7 +131,22 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java" line="20" class="com.jinji.test.neo4j.TestSimpleNodeProperty" package="com.jinji.test.neo4j">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -152,28 +157,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestRecommendationConfigurations.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java">
+      <file leaf-file-name="ItemBasedCollaborativeAlgoNeo4jImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="67" selection-start="6196" selection-end="6196" vertical-scroll-proportion="0.8053435">
+            <state line="32" column="20" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserBasedCollaborativeAlgo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/UserBasedCollaborativeAlgo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="8" selection-start="823" selection-end="900" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleNodeProperty.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java">
+      <file leaf-file-name="SimilarityFactorModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimilarityFactorRelation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorRelation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="74" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+            <state line="52" column="31" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,44 +189,10 @@
       <file leaf-file-name="SimilarityFactor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="18" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemBasedCollaborativeAlgo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/ItemBasedCollaborativeAlgo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleGraphDataModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleGraphDataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="54" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphDataModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/GraphDataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="194" selection-end="208" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentBasedGraphDataModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/ContentBasedGraphDataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="16" selection-start="2432" selection-end="2432" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="18" column="36" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,16 +200,54 @@
       <file leaf-file-name="JinjiRecommenderEngine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="16" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
+            <state line="16" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1137#1145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neo4jGraphDb.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="46" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JinjiRecommendationAlgorithm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/JinjiRecommendationAlgorithm.java">
+      <file leaf-file-name="SimpleContentBasedAlgo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+            <state line="10" column="66" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JinjiRecommendationAlgorithm.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="17" selection-start="227" selection-end="227" vertical-scroll-proportion="0.35123968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphDb.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimplePathPresence.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="49" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -252,22 +263,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/SimilarityFactor.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/SimpleContentBasedAlgo.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/ItemBasedCollaborativeAlgo.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/NumericNodeProperty.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/GraphDataModel.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/recommender/SimplePathPresence.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/UserBasedCollaborativeAlgo.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimpleGraphDataModel.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/ItemBasedCollaborativeAlgo.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorRelation.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/ContentBasedGraphDataModel.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/ItemBasedCollaborativeAlgo.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" />
         <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/datamodel/SimpleGraphDataModel.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/datamodel/ContentBasedGraphDataModel.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/SimpleContentBasedAlgoNeo4jImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/UserBasedCollaborativeAlgoNeo4jImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/UserBasedCollaborativeAlgo.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
       </list>
     </option>
   </component>
@@ -301,16 +312,166 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neo4j" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommender" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neo4j" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neo4j" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.sorted" value="false" />
@@ -318,10 +479,12 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jinji.graph.neo4j.algorithms" />
       <recent name="com.jinji.recommender" />
       <recent name="com.jinji.test.neo4j" />
     </key>
@@ -639,26 +802,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1355" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47460595" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.452007" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51313484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42206654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980666" sideWeight="0.57793343" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980666" sideWeight="0.547993" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38178635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42031524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -723,107 +886,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimpleNodeProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/com/sun/org/apache/xerces/internal/impl/dtd/models/SimpleContentModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="70" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/UserBasedCollaborativeAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="77" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleGraphDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/GraphDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="194" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/JinjiRecommendationAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="16" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/ItemBasedCollaborativeAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorRelation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="74" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/ContentBasedGraphDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="16" selection-start="2432" selection-end="2432" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="18" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="67" selection-start="6196" selection-end="6196" vertical-scroll-proportion="0.8053435">
+        <state line="123" column="18" selection-start="5396" selection-end="5396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/ItemBasedCollaborativeAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="11" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/datamodel/ContentBasedGraphDataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="32" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#726#778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/SimpleContentBasedAlgoNeo4jImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/UserBasedCollaborativeAlgoNeo4jImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="8" selection-start="911" selection-end="988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/UserBasedCollaborativeAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="8" selection-start="823" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="20" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="31" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="36" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1137#1145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="46" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="66" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="227" selection-end="227" vertical-scroll-proportion="0.35123968">
           <folding />
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package com.jinji.recommender;
 
+import com.jinji.graph.GraphDb;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,10 +22,10 @@ public class TagComparator extends SimilarityFactor {
     }
 
     @Override
-    public void calculate() {
+    public void calculate(GraphDb datasource) {
 
         Map<String,Object> params = new HashMap<String,Object>();
-        params.put("user", getModel().getUser());
+        //params.put("user", getModel().getUser());
 
 
     }

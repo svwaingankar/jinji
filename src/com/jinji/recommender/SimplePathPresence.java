@@ -1,6 +1,7 @@
 package com.jinji.recommender;
 
-import com.jinji.graph.QueryRegistry;
+import com.jinji.graph.GraphDb;
+import com.jinji.graph.neo4j.QueryRegistry;
 import com.jinji.graph.neo4j.Neo4jGraphDb;
 import org.neo4j.graphdb.Transaction;
 
@@ -24,7 +25,7 @@ public class SimplePathPresence extends SimilarityFactor {
 
 
     @Override
-    public void calculate() throws Exception {
+    public void calculate(GraphDb datasource) throws Exception {
 
         Neo4jGraphDb graph = (Neo4jGraphDb) getModel().getDatasource();
         Transaction tx= graph.getDB().beginTx();

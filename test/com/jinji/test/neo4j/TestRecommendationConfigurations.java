@@ -1,8 +1,12 @@
 package com.jinji.test.neo4j;
 
-import com.jinji.graph.GraphDb;
 import com.jinji.graph.neo4j.Neo4jGraphDb;
 import com.jinji.recommender.*;
+import com.jinji.recommender.algorithm.ItemBasedCollaborativeAlgo;
+import com.jinji.recommender.algorithm.SimpleContentBasedAlgo;
+import com.jinji.recommender.algorithm.UserBasedCollaborativeAlgo;
+import com.jinji.recommender.datamodel.ContentBasedGraphDataModel;
+import com.jinji.recommender.datamodel.SimpleGraphDataModel;
 import org.junit.Test;
 
 import java.util.List;
@@ -23,7 +27,7 @@ public class TestRecommendationConfigurations extends BaseTest{
 
         //Currently support only Neo4j
         //the Neo4jGraphDb implementation by default looks for neo4jgraph.properties
-        GraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb();
 
         //Each datasource impl knows hos to handle the datamodel.
         //for Neo4jGraphDb these identifiers for nodes refer to index names.
@@ -32,15 +36,19 @@ public class TestRecommendationConfigurations extends BaseTest{
         simpleDataModel.setUser("users");
         simpleDataModel.setItem("items");
         simpleDataModel.setPrimaryRelation("bought");
+        simpleDataModel.setPrimaryRelationProperty(null);
+        simpleDataModel.setDatasource(db);
 
 
-        JinjiRecommenderEngine engine = new JinjiRecommenderEngine();
+        JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
 
-        engine.setDatasource(db);
+        engine.setMaxRecommendations(10);
         engine.addAlgorithm(new ItemBasedCollaborativeAlgo(simpleDataModel), 10);
 
+        engine.processRecommmendations();
+
         //This just returns item id's
-        List<String> recommendations = engine.getRecommmendations("id1002", 10, 100);
+        List<String> recommendations = engine.getRecommmendations("id1002", 10);
 
     }
 
@@ -50,15 +58,17 @@ public class TestRecommendationConfigurations extends BaseTest{
     @Test
     public void testHybridItemAndUserBasedCollaborativeReco(){
 
-        GraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb();
 
-        JinjiRecommenderEngine engine = new JinjiRecommenderEngine();
-        engine.setDatasource(db);
+        JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
+        engine.setMaxRecommendations(10);
 
         SimpleGraphDataModel simpleDataModel = new SimpleGraphDataModel();
         simpleDataModel.setUser("users");
         simpleDataModel.setItem("items");
         simpleDataModel.setPrimaryRelation("bought");
+        simpleDataModel.setPrimaryRelationProperty(null);
+        simpleDataModel.setDatasource(db);
 
 
 
@@ -67,22 +77,25 @@ public class TestRecommendationConfigurations extends BaseTest{
         engine.addAlgorithm(new ItemBasedCollaborativeAlgo(simpleDataModel),10);
         engine.addAlgorithm(new UserBasedCollaborativeAlgo(simpleDataModel),5);
 
+        engine.processRecommmendations();
+
         //This takes usedid, min, max recommendations needed and returns item id's
-        List<String> recommendations = engine.getRecommmendations("user002", 10, 100);
+        List<String> recommendations = engine.getRecommmendations("user002", 10);
 
     }
 
     @Test
     public void testWithContentBasedRecoAlgorithm() throws Exception {
 
-        GraphDb db = new Neo4jGraphDb();
-        JinjiRecommenderEngine engine = new JinjiRecommenderEngine();
-        engine.setDatasource(db);
+        Neo4jGraphDb db = new Neo4jGraphDb();
+        JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
+        engine.setMaxRecommendations(10);
 
         ContentBasedGraphDataModel model = new ContentBasedGraphDataModel();
 
         model.setUser("customers");
         model.setItem("movies");
+        model.setDatasource(db);
 
         //For Content based recommendations
         //Criteria to be calculated are specified for User-User, Item-Item and User-Item (Called Similarity Factors here onwards)
@@ -120,18 +133,22 @@ public class TestRecommendationConfigurations extends BaseTest{
             path.relationship("language", Direction.OUTGOING)
                     .relationship("speaks", Direction.INCOMING);
 
+            //popularity
 
             model.createSimilarityFactor(SimilarityFactor.Type.ItemToUser, 30, new SimplePathPresence(path));
             // TODO: remove this, This Factor can be used for target Pincode/City match criteria calculation
+
+        model.createSimilarityFactor(SimilarityFactor.Type.ItemToUser, 30, new SimplePathPresence(path));
+        // TODO: remove this, This Factor can be used for target Pincode/City match criteria calculation
 
         //A list of such Similarity factor processors will be provided and programmer can also write more.
 
 
         engine.addAlgorithm(new SimpleContentBasedAlgo(model), 10);
-        engine.getRecommendation("user0001");
+        engine.processRecommmendations();
 
         //This contains item id's with info on their weights for each criteria, for helping programmer tweak weights
-        RecommendationResult recommendationsWithTrace = engine.getRecommmendationsWithTrace("id1002", 10, 100);
+        RecommendationResult recommendationsWithTrace = engine.getRecommmendationsWithTrace("id1002", 10);
 
     }
 

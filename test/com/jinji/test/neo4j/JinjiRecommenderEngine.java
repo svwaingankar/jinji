@@ -2,7 +2,9 @@ package com.jinji.test.neo4j;
 
 import com.jinji.graph.GraphDb;
 import com.jinji.recommender.*;
+import com.jinji.recommender.algorithm.JinjiRecommendationAlgorithm;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,8 +15,13 @@ import java.util.List;
  */
 public class JinjiRecommenderEngine {
 
-    private RecommendationAlgorithm collaborativeFiltering;
+    private List<JinjiRecommendationAlgorithm> algorithms = new ArrayList<JinjiRecommendationAlgorithm>();
     private GraphDb datasource;
+    private int maxRecommendations;
+
+    public JinjiRecommenderEngine(GraphDb db) {
+        this.datasource = db;
+    }
 
     public void setDatasource(GraphDb datasource) {
         this.datasource = datasource;
@@ -24,37 +31,46 @@ public class JinjiRecommenderEngine {
         return datasource;
     }
 
-    public void getRecommendation(String user) throws Exception {
+    public void processRecommmendations() {
 
-/*        for(SimilarityFactor p:userSimilarity){
-            p.calculate();
+        for (JinjiRecommendationAlgorithm algo: algorithms){
+
+            algo.getModel().processSimilarityFactors();
+            algo.processRecommendations();
+
         }
-        for(SimilarityFactor p:itemSimilarity){
-            p.calculate();
+    }
+
+    public List<String> getRecommmendations(String id1002, int count) {
+
+        List<String> algoIds = new ArrayList<String>();
+        for (JinjiRecommendationAlgorithm algo: algorithms){
+
+            algoIds.add(algo.getId());
         }
-        for(SimilarityFactor p:userItemSimilarity){
-            p.calculate();
-        }*/
-    }
 
-
-    public void setCollaborativeFiltering(RecommendationAlgorithm collaborativeFiltering) {
-        this.collaborativeFiltering = collaborativeFiltering;
-    }
-
-    public RecommendationAlgorithm getCollaborativeFiltering() {
-        return collaborativeFiltering;
-    }
-
-    public List<String> getRecommmendations(String id1002, int i, int i1) {
         return null;
     }
 
-    public void addAlgorithm(JinjiRecommendationAlgorithm algo, int i) {
-        algo.
+    /**
+     * Add an algorthm and its multiplying fator to the recommendation engine.
+     * @param algorithm
+     * @param weight
+     */
+    public void addAlgorithm(JinjiRecommendationAlgorithm algorithm, int weight) {
+        algorithm.setMultiplyingFactor(weight);
+        algorithms.add(algorithm);
     }
 
-    public RecommendationResult getRecommmendationsWithTrace(String id1002, int i, int i1) {
+    public RecommendationResult getRecommmendationsWithTrace(String id1002, int count) {
         return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void setMaxRecommendations(int maxRecommendations) {
+        this.maxRecommendations = maxRecommendations;
+    }
+
+    public int getMaxRecommendations() {
+        return maxRecommendations;
     }
 }

@@ -1,5 +1,7 @@
 package com.jinji.recommender;
 
+import com.jinji.graph.GraphDb;
+
 /**
  * Jinji - https://github.com/svwaingankar/jinji
  * User: shantaramw
@@ -12,7 +14,7 @@ public class NumericNodeProperty extends SimilarityFactor {
 
 
     @Override
-    public void calculate() throws Exception {
+    public void calculate(GraphDb datasource) throws Exception {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 }

@@ -1,4 +1,4 @@
-package com.jinji.graph;
+package com.jinji.graph.neo4j;
 
 import com.jinji.recommender.Direction;
 import com.jinji.recommender.Node;

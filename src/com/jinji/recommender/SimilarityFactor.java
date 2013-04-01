@@ -1,6 +1,7 @@
 package com.jinji.recommender;
 
-import com.jinji.test.neo4j.JinjiRecommenderEngine;
+import com.jinji.graph.GraphDb;
+import com.jinji.recommender.datamodel.GraphDataModel;
 
 /**
  * Jinji - https://github.com/svwaingankar/jinji
@@ -14,8 +15,6 @@ abstract public class SimilarityFactor {
     String endIndex;
     int weight;
     String id;
-
-    private GraphDataModel model;
 
     public int getWeight() {
         return weight;
@@ -33,17 +32,7 @@ abstract public class SimilarityFactor {
         this.id = id;
     }
 
-    //abstract public void calculate();
-
-    abstract public void calculate() throws Exception;
-
-    public void setModel(GraphDataModel model) {
-        this.model = model;
-    }
-
-    public GraphDataModel getModel() {
-        return model;
-    }
+    abstract public void calculate(GraphDb datasource) throws Exception;
 
     public String getEndIndex() {
         return endIndex;

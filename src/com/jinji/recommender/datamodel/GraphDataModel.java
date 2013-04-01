@@ -1,4 +1,4 @@
-package com.jinji.recommender;
+package com.jinji.recommender.datamodel;
 
 import com.jinji.graph.GraphDb;
 
@@ -12,5 +12,7 @@ public interface GraphDataModel {
 
     public void setDatasource(GraphDb datasource);
     public GraphDb getDatasource();
+    public void processSimilarityFactors() throws Exception;
+
 
 }

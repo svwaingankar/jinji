@@ -1,4 +1,4 @@
-package com.jinji.recommender;
+package com.jinji.recommender.datamodel;
 
 import com.jinji.graph.GraphDb;
 
@@ -8,12 +8,13 @@ import com.jinji.graph.GraphDb;
  * Date: 28/3/13
  * Time: 12:16 AM
  */
-public class SimpleGraphDataModel implements GraphDataModel{
+public class SimpleGraphDataModel implements GraphDataModel {
 
     private GraphDb datasource;
     private String user;
     private String item;
     private String primaryRelation;
+    private String primaryRelationProperty;
 
     public void setDatasource(GraphDb datasource) {
         this.datasource = datasource;
@@ -21,6 +22,11 @@ public class SimpleGraphDataModel implements GraphDataModel{
 
     public GraphDb getDatasource() {
         return datasource;
+    }
+
+    @Override
+    public void processSimilarityFactors() {
+        //no similarity factors in simple data model
     }
 
     public void setUser(String user) {
@@ -47,4 +53,11 @@ public class SimpleGraphDataModel implements GraphDataModel{
         return primaryRelation;
     }
 
+    public void setPrimaryRelationProperty(String primaryRelationProperty) {
+        this.primaryRelationProperty = primaryRelationProperty;
+    }
+
+    public String getPrimaryRelationProperty() {
+        return primaryRelationProperty;
+    }
 }

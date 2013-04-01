@@ -31,11 +31,11 @@ public class TestSimplePathPresence extends BaseTest{
         SimplePathPresence itemSim = new SimplePathPresence(path);
         itemSim.setWeight(10);
         itemSim.setId("j_i_");
-        itemSim.setModel(engine);
+        //itemSim.setModel(engine);
         itemSim.setStartIndex("movies");
         itemSim.setEndIndex("movies");
 
-        itemSim.calculate();
+        itemSim.calculate(datasource);
 
     }
 
