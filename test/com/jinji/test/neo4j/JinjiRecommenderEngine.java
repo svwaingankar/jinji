@@ -31,7 +31,7 @@ public class JinjiRecommenderEngine {
         return datasource;
     }
 
-    public void processRecommmendations() {
+    public void processRecommmendations() throws Exception {
 
         for (JinjiRecommendationAlgorithm algo: algorithms){
 

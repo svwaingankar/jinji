@@ -23,7 +23,7 @@ public class TestRecommendationConfigurations extends BaseTest{
      * Simply use the user/items nodes and the primary relationship between them to do Item based Collaborative filtering based Recommendations
      */
     @Test
-    public void testItemBasedCollaborative(){
+    public void testItemBasedCollaborative() throws Exception {
 
         //Currently support only Neo4j
         //the Neo4jGraphDb implementation by default looks for neo4jgraph.properties
@@ -56,7 +56,7 @@ public class TestRecommendationConfigurations extends BaseTest{
      * Simply use the user/items nodes and the primary relationship between them to do Item based And User based Collaborative filtering based Recommendations
      */
     @Test
-    public void testHybridItemAndUserBasedCollaborativeReco(){
+    public void testHybridItemAndUserBasedCollaborativeReco() throws Exception {
 
         Neo4jGraphDb db = new Neo4jGraphDb();
 

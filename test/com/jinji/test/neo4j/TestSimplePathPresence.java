@@ -20,8 +20,7 @@ public class TestSimplePathPresence extends BaseTest{
 
         Neo4jGraphDb db = new Neo4jGraphDb();
 
-        JinjiRecommenderEngine engine = new JinjiRecommenderEngine();
-        engine.setDatasource(db);
+        JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
 
         RelationshipPath path = new RelationshipPath();
         path.relationship("language",Direction.OUTGOING)
@@ -35,7 +34,7 @@ public class TestSimplePathPresence extends BaseTest{
         itemSim.setStartIndex("movies");
         itemSim.setEndIndex("movies");
 
-        itemSim.calculate(datasource);
+        itemSim.calculate(db);
 
     }
 

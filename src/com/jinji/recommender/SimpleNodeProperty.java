@@ -25,7 +25,7 @@ public class SimpleNodeProperty extends SimilarityFactor {
     @Override
     public void calculate(GraphDb datasource) throws Exception {
 
-        Neo4jGraphDb graph = (Neo4jGraphDb) getModel().getDatasource();
+        Neo4jGraphDb graph = (Neo4jGraphDb) datasource;
         Transaction tx= graph.getDB().beginTx();
 
         try {
