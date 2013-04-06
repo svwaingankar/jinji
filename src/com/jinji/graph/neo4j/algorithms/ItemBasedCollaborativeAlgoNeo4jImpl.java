@@ -25,7 +25,24 @@ public class ItemBasedCollaborativeAlgoNeo4jImpl implements JinjiRecommendationA
 
     @Override
     public void processRecommendations() {
-        //To change body of implemented methods use File | Settings | File Templates.
+        calculateItemToItemSimilarity();
+        calculateUserToUserSimilarity();
+        calculateUserToItemReco();
+    }
+
+    private void calculateUserToItemReco() {
+
+
+    }
+
+    private void calculateUserToUserSimilarity() {
+
+
+    }
+
+    private void calculateItemToItemSimilarity() {
+
+
     }
 
     @Override
@@ -40,5 +57,16 @@ public class ItemBasedCollaborativeAlgoNeo4jImpl implements JinjiRecommendationA
     public void setMultiplyingFactor(int multiplyingFactor) {
         this.multiplyingFactor = multiplyingFactor;
     }
+
+    //start n=node(#{m.neo_id}) match (n)<-[r1:rated]-(x)-[r2:rated]->(y) where (r1.stars>3 and r2.stars>3) return y.title,count(*) order by count(*) desc limit 5
+
+    public static String simpleItemBasedWithNoProperty() {
+
+        StringBuilder query = new StringBuilder();
+        query.append("start n=node(#{m.neo_id}) match (n)<-[r1:rated]-(x)-[r2:rated]->(y) where (r1.stars>3 and r2.stars>3) return y.title,count(*) order by count(*) desc limit 5 ");
+        return query.toString();
+
+    }
+
 
 }

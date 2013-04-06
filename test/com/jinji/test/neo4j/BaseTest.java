@@ -26,7 +26,7 @@ public class BaseTest {
         try{
 
 
-            Neo4jGraphUtil util = new Neo4jGraphUtil(new Neo4jGraphDb());
+            Neo4jGraphUtil util = new Neo4jGraphUtil(new Neo4jGraphDb("D:\\shantaram\\jinji-graph"));
 
             FileInputStream fstream = new FileInputStream("D:\\shantaram\\jinji\\trunk\\config\\users.txt");
 
@@ -64,7 +64,10 @@ public class BaseTest {
 
             while ((strLine = br.readLine()) != null)   {
                 String[] str = strLine.trim().split("-");
-                util.createUniqueRelationship(str[0], "customers", str[1], "movies", "bought" );
+                String[] from = str[0].split(":");
+                String[] to = str[1].split(":");
+                String[] rel = str[2].split("=");
+                util.createUniqueRelationship(from[1], from[0], to[1], to[0], rel[0], rel[1] );
             }
             in.close();
         }catch (Exception e){//Catch exception if any
@@ -97,7 +100,7 @@ public class BaseTest {
             for(String val:vals){
                 String[] nodes = ((String)val).split("-");
                 util.createUniqueNode(nodes[1],nodes[0], Collections.EMPTY_MAP);
-                util.createUniqueRelationship(mainNodeId,mainNodeIndex,nodes[1],nodes[0],keyval[0]);
+                util.createUniqueRelationship(mainNodeId,mainNodeIndex,nodes[1],nodes[0],keyval[0],null);
             }
         }
 

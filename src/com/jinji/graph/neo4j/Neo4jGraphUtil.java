@@ -53,7 +53,7 @@ public class Neo4jGraphUtil {
 
     }
 
-    public void createUniqueRelationship(String startId, String startIndex, String endId, String endIndex, String rel) throws Exception {
+    public void createUniqueRelationship(String startId, String startIndex, String endId, String endIndex, String rel, String relVal) throws Exception {
 
         Transaction tx= graph.getDB().beginTx();
         try {
@@ -62,6 +62,12 @@ public class Neo4jGraphUtil {
 
             Map<String, Object> props = new HashMap<String, Object>();
             graph.executeQuery(query,props);
+
+            if(relVal!=null){
+                query = createRelationshipProperty(startId, startIndex,  endId,  endIndex,  rel, relVal);
+
+                graph.executeQuery(query,props);
+            }
             tx.success();
         }
         catch(Exception e) {
@@ -82,6 +88,16 @@ public class Neo4jGraphUtil {
                 .append(startIndex + "(id='" + startId + "'), b = node:")
                 .append(endIndex+"(id='"+endId+"')")
                 .append(" create unique (a)-[r:" + rel + "]->(b)");
+
+        return query.toString();
+    }
+
+    private static String createRelationshipProperty(String startId, String startIndex, String endId, String endIndex, String rel,String relVal){
+        StringBuilder query = new StringBuilder();
+        query.append("START a=node:")
+                .append(startIndex + "(id='" + startId + "'), b = node:")
+                .append(endIndex+"(id='"+endId+"')")
+                .append(" MATCH a-[r:"+rel+"]-b SET r.VALUE="+relVal);
 
         return query.toString();
     }

@@ -54,4 +54,20 @@ public class SimilarityFactorModel {
         }
 
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public SimilarityFactor getSimilarityFactor() {
+        return similarityFactor;
+    }
+
+    public void setSimilarityFactor(SimilarityFactor similarityFactor) {
+        this.similarityFactor = similarityFactor;
+    }
 }

@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f731d41e-4f54-4647-ab63-3243dcf3bc41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java" afterPath="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java" afterPath="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java" afterPath="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/user-item.txt" afterPath="$PROJECT_DIR$/config/user-item.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jinji.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/RelationType.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363884421327" ignored="false" />
     <file path="/fragment.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364753522094" ignored="false" />
     <file path="/TestItemBaseRecommendation.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364411928293" ignored="false" />
-    <file path="/Neo4jGraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364748141409" ignored="false" />
+    <file path="/Neo4jGraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820689500" ignored="false" />
     <file path="D:/code/reco4j/reco4j-neo4j-master/src/main/java/org/reco4j/graph/neo4j/Neo4jGraph.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363921104772" ignored="false" />
     <file path="/neo4jgraph.properties" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363921764888" ignored="false" />
-    <file path="/Neo4jGraphUtil.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364128023794" ignored="false" />
+    <file path="/Neo4jGraphUtil.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1365252688110" ignored="false" />
     <file path="/Neo4jGraphException.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1363962920940" ignored="false" />
     <file path="/NumberComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364099655145" ignored="false" />
     <file path="/TagComparator.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364058808179" ignored="false" />
@@ -28,9 +36,9 @@
     <file path="/SimplePathPresence.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364799365217" ignored="false" />
     <file path="/NumericNodeProperty.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364233778042" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/offer/ScheduledRecalculateCustomerReco.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364272222498" ignored="false" />
-    <file path="/a.dummy" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364309671102" ignored="false" />
+    <file path="/a.dummy" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820991820" ignored="false" />
     <file path="/TestSimpleNodeProperty.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364310293960" ignored="false" />
-    <file path="/BaseTest.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364310069361" ignored="false" />
+    <file path="/BaseTest.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1365252677170" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/graph/QueryRegistry.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364317249238" ignored="false" />
     <file path="/TestSimplePathPresence.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364367637099" ignored="false" />
     <file path="/Relation2.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364366025683" ignored="false" />
@@ -44,16 +52,16 @@
     <file path="/ItemBasedCollaborative.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364409627360" ignored="false" />
     <file path="/JingiDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364410120819" ignored="false" />
     <file path="/SimilarityFactor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364454060441" ignored="false" />
-    <file path="/ContentBasedGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364752957595" ignored="false" />
+    <file path="/ContentBasedGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364826386858" ignored="false" />
     <file path="/SimpleContentBasedAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364498275757" ignored="false" />
     <file path="/ItemBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364748055583" ignored="false" />
-    <file path="/TestRecommendationConfigurations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364749172235" ignored="false" />
+    <file path="/TestRecommendationConfigurations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364827337388" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/config/quartz_data.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
-    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/CustomerRecommendations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/CustomerRecommendations.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910127577" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/analytics/recommendations/TestLocationCriteriaProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/domain/offer/Offer.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
     <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/xmlparser/TestOfferImport_IDS.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
-    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/setup/Setup.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364443610865" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/setup/Setup.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910127577" ignored="false" />
     <file path="/UserBasedCollaborativeAlgo.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364498227261" ignored="false" />
     <file path="/SimilarityFactorRelation.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364501017129" ignored="false" />
     <file path="/JinjiRecommendationAlgorithm.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747839641" ignored="false" />
@@ -62,7 +70,145 @@
     <file path="/SimpleGraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364749724751" ignored="false" />
     <file path="/GraphDataModel.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364739194999" ignored="false" />
     <file path="/GraphDb.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747731292" ignored="false" />
-    <file path="/ItemBasedCollaborativeAlgoNeo4jImpl.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364747987969" ignored="false" />
+    <file path="/ItemBasedCollaborativeAlgoNeo4jImpl.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1365256703605" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/offer/MySellersCriteriaProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825003047" ignored="false" />
+    <file path="/MySellersCriteriaProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364802224702" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com.idmission.analytics.graph/BaseGraph.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364829378822" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com.idmission.analytics.graph/ReadonlyBaseGraph.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364840717784" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/events/MySellerUpdateHandler.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364802583492" ignored="false" />
+    <file path="/BaseGraph.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364802595723" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/docs/constant-values.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364803281970" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/docs/com/idmission/analytics/recommendations/offer/MySellersCriteriaProcessor.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364803281970" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/dist/graph-context.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364803281970" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/docs/com/idmission/analytics/recommendations/offer/class-use/MySellersCriteriaProcessor.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364803281970" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.xmlparser.TestOfferCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820386124" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.company.TestCustomer.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.geography.TestCountry.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364805029155" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.offer.TestOfferShare.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825784760" ignored="false" />
+    <file path="/config.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364805144429" ignored="false" />
+    <file path="/tempxml.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820355417" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.recommendations.TestCustomerCriteriaTask.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820264963" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.transaction.TestTransaction.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820300864" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.xmlparser.TestMerchantImport.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820338574" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.xmlparser.TestReadOnlyBaseGraph.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820401414" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.xmlparser.TestStockImport.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364820445793" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40005.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CustomerLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/PincodeLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MySellerCustomerCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/LoadRQRS_RemoveOfferProcessor.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.company.TestMerchant.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.company.TestCompany.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40013.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/PincodeLoadDuplicate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40015.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10002.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_stock50004.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/companyQueries.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_stock50002.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/offerQueries.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.company.TestMySellers.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_stock50001.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.cache.TestAnalyticsCache.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/productQueries.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/recommendationQueries.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/transactionQueries.html" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferDeleteRQRS.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40009.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MerchantDetailLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CompanyLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_categories.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/test-reports-temp/TEST-com.idmission.analytics.estimations.TestEstimateOfferDistribution.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825141292" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreateInSUBMITTEDState.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/ShareOfferEmailMultiple.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/TransactionLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40014.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10005.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20001.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_ownerCompany.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/StockWithDistributorBTC72.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_stock50005.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40001.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10001.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/DistributorDetailLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40010.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40008.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MerchantLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferValidAtMerchants.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferEnableRQRS.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferDemography.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreate_Item_On.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20001.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CategoryLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075972" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20002.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/AreaLoadEmpty.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40007.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CustomerCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40011.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CityLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_tags.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40006.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MySellerRemove.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10004.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20004.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MerchantDetailLoadWithoutCurrency.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40016.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40020.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferApproveRQRS.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/StockCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MySellerAdd.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40019.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20005_10003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40018.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40017.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferWithTags.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/ChangeCurrentLocation.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/StockCreateNoDistributorNoManufacturer.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/AreaLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40004.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferDeclineRQRS.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MySellerMerchantCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/ShareOfferEmail.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/TagLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreateTagWithSpace.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreateDuplicateCode.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferCreate_Fixed_Price.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferDisableRQRS_RemoveOffer.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/MerchantCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10006.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20007.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/StockSkuLoad.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20006.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20005.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40002.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_offer40012.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/CityLoadEmpty.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferDisableRQRS.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20002.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_customer20005.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_mysellers20003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10007.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/OfferImport.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_stock50003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/base_merchant10003.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/TransactionCreate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075973" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/AreaLoadDuplicate.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075974" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/ehcache.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075974" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/build-test/ChangeCurrentLocationToOriginal.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364825075974" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/analytics/events/TestEventHandler.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364829378822" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/util/RecommendationsProperties.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364829378822" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/xmlparser/baseData/base_offer40021.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364840672022" ignored="false" />
+    <file path="/base_offer40021.xml" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364840641365" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/analytics/recommendations/TestExpiryCriteriaProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364840766824" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/test/com/idmission/analytics/recommendations/TestRemoveOfferProcessor.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910127577" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/util/AppProperties.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910127577" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/offer/query/RecommendationQueryRegistry.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910127577" ignored="false" />
+    <file path="D:/code/BtcAnalytics/trunk/platform/src/com/idmission/analytics/recommendations/OfferRecommendationCache.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910276795" ignored="false" />
+    <file path="/OfferRecommendationCache.java" changelist="f731d41e-4f54-4647-ab63-3243dcf3bc41" time="1364910276795" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +239,48 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimplePathPresenceNeo4jImpl.java" line="2" class="SimplePathPresenceNeo4jImpl.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" line="46" class="com.jinji.test.neo4j.JinjiRecommenderEngine" package="com.jinji.test.neo4j">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java" line="28" class="com.jinji.test.neo4j.BaseTest" package="com.jinji.test.neo4j">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java" line="59" class="com.jinji.test.neo4j.BaseTest" package="com.jinji.test.neo4j">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -141,8 +329,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -152,97 +340,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimilarityFactor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java">
+      <file leaf-file-name="BaseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
+            <state line="74" column="47" selection-start="2512" selection-end="2512" vertical-scroll-proportion="-6.16">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neo4jGraphDb.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java">
+      <file leaf-file-name="ItemBasedCollaborativeAlgoNeo4jImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+            <state line="65" column="34" selection-start="1695" selection-end="1695" vertical-scroll-proportion="1.5867347">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleContentBasedAlgo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java">
+      <file leaf-file-name="Neo4jGraphUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="66" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JinjiRecommendationAlgorithm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="55" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumericNodePropertyNeo4jImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/NumericNodePropertyNeo4jImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="64" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+            <state line="70" column="0" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1823#1839#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleNodePropertyNeo4jImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimpleNodePropertyNeo4jImpl.java">
+      <file leaf-file-name="JinjiRecommenderEngine.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="57" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimplePathPresenceNeo4jImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimplePathPresenceNeo4jImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleNodeProperty.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="8" selection-start="671" selection-end="807" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimplePathPresence.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="48" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumericNodeProperty.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/NumericNodeProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="56" selection-start="288" selection-end="288" vertical-scroll-proportion="0.4393638">
+            <state line="48" column="77" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -258,22 +388,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/datamodel/SimpleGraphDataModel.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/datamodel/ContentBasedGraphDataModel.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/SimpleContentBasedAlgoNeo4jImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/UserBasedCollaborativeAlgoNeo4jImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/UserBasedCollaborativeAlgo.java" />
-        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/NumericNodePropertyNeo4jImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimpleNodePropertyNeo4jImpl.java" />
         <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimplePathPresenceNeo4jImpl.java" />
         <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java" />
         <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java" />
         <option value="$PROJECT_DIR$/src/com/jinji/recommender/NumericNodeProperty.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/config.xml" />
+        <option value="$PROJECT_DIR$/test/tempxml.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestSimplePathPresence.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/algorithm/ItemBasedCollaborativeAlgo.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/recommender/datamodel/ContentBasedGraphDataModel.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java" />
+        <option value="$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java" />
       </list>
     </option>
   </component>
@@ -307,6 +437,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,8 +506,18 @@
               <option name="myItemId" value="jinji" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recommender" />
+              <option name="myItemId" value="jinji" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,41 +531,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="pojoxml-1.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neo4j" />
+              <option name="myItemId" value="pojoxml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,75 +553,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neo4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datamodel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jinji" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neo4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="pojoxml-1.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -527,91 +600,7 @@
       <recent name="com.jinji" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSimplePathPresence">
-    <configuration default="false" name="TestItemBaseRecommendation" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="jinji" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jinji.test.neo4j" />
-      <option name="MAIN_CLASS_NAME" value="com.jinji.test.neo4j.TestItemBaseRecommendation" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestItemBaseRecommendation.testCreateTestDataset" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="jinji" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jinji.test.neo4j" />
-      <option name="MAIN_CLASS_NAME" value="com.jinji.test.neo4j.TestItemBaseRecommendation" />
-      <option name="METHOD_NAME" value="testCreateTestDataset" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestItemBaseRecommendation.testItemBasedRecommendation" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="jinji" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jinji.test.neo4j" />
-      <option name="MAIN_CLASS_NAME" value="com.jinji.test.neo4j.TestItemBaseRecommendation" />
-      <option name="METHOD_NAME" value="testItemBasedRecommendation" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestRecommendationConfigurations.testItemBasedCollaborative">
     <configuration default="false" name="TestSimpleNodeProperty.testSimpleNodeCalculation" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jinji" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -668,6 +657,72 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="tempxml" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="tempxml" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="jinji" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestRecommendationConfigurations.testItemBasedCollaborative" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="jinji" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jinji.test.neo4j" />
+      <option name="MAIN_CLASS_NAME" value="com.jinji.test.neo4j.TestRecommendationConfigurations" />
+      <option name="METHOD_NAME" value="testItemBasedCollaborative" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestRecommendationConfigurations.testWithContentBasedRecoAlgorithm" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="jinji" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jinji.test.neo4j" />
+      <option name="MAIN_CLASS_NAME" value="com.jinji.test.neo4j.TestRecommendationConfigurations" />
+      <option name="METHOD_NAME" value="testWithContentBasedRecoAlgorithm" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -680,6 +735,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -707,19 +775,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -757,19 +812,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation.testCreateTestDataset" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation.testItemBasedRecommendation" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestSimpleNodeProperty.testSimpleNodeCalculation" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestSimplePathPresence" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestSimpleNodeProperty.testSimpleNodeCalculation" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestSimplePathPresence" />
+      <item index="2" class="java.lang.String" itemvalue="Application.tempxml" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestRecommendationConfigurations.testItemBasedCollaborative" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestRecommendationConfigurations.testWithContentBasedRecoAlgorithm" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSimplePathPresence" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSimpleNodeProperty.testSimpleNodeCalculation" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation.testItemBasedRecommendation" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestItemBaseRecommendation.testCreateTestDataset" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestRecommendationConfigurations.testItemBasedCollaborative" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestRecommendationConfigurations.testWithContentBasedRecoAlgorithm" />
+        <item index="2" class="java.lang.String" itemvalue="Application.tempxml" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSimplePathPresence" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSimpleNodeProperty.testSimpleNodeCalculation" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -830,26 +885,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1355" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51313484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30122593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5884413" sideWeight="0.4972931" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41856393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980666" sideWeight="0.547993" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38178635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980666" sideWeight="0.61821365" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5884413" sideWeight="0.4972931" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.452007" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42031524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48686516" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -914,120 +969,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/SimpleContentBasedAlgoNeo4jImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactorModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+        <state line="46" column="49" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/UserBasedCollaborativeAlgoNeo4jImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/ItemBasedCollaborativeAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="8" selection-start="911" selection-end="988" vertical-scroll-proportion="0.0">
+        <state line="28" column="42" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/UserBasedCollaborativeAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/QueryRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="823" selection-end="900" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/GraphDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="248" selection-end="918" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphDb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+        <state line="57" column="40" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/SimpleContentBasedAlgo.java">
+    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/TestRecommendationConfigurations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="66" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+        <state line="54" column="0" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/algorithm/JinjiRecommendationAlgorithm.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="55" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="-4.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimilarityFactor.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
+        <state line="12" column="16" selection-start="489" selection-end="489" vertical-scroll-proportion="-4.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/NumericNodePropertyNeo4jImpl.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/statements/RunBefores.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="64" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+        <state line="13" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-3.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="16" selection-start="2153" selection-end="2153" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/Neo4jGraphUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1823#1839#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimpleNodePropertyNeo4jImpl.java">
+    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/JinjiRecommenderEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="57" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/datamodel/SimplePathPresenceNeo4jImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimpleNodeProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="671" selection-end="807" vertical-scroll-proportion="0.0">
+        <state line="48" column="77" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/SimplePathPresence.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="48" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+        <state line="31" column="35" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.36494252">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jinji/recommender/NumericNodeProperty.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="288" selection-end="288" vertical-scroll-proportion="0.4393638">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="504" selection-end="504" vertical-scroll-proportion="0.1954023">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/jinji/test/neo4j/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="47" selection-start="2512" selection-end="2512" vertical-scroll-proportion="-6.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jinji/graph/neo4j/algorithms/ItemBasedCollaborativeAlgoNeo4jImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="34" selection-start="1695" selection-end="1695" vertical-scroll-proportion="1.5867347">
           <folding />
         </state>
       </provider>

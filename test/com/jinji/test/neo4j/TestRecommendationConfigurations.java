@@ -8,6 +8,8 @@ import com.jinji.recommender.algorithm.UserBasedCollaborativeAlgo;
 import com.jinji.recommender.datamodel.ContentBasedGraphDataModel;
 import com.jinji.recommender.datamodel.SimpleGraphDataModel;
 import org.junit.Test;
+import org.pojoxml.core.PojoXml;
+import org.pojoxml.core.PojoXmlFactory;
 
 import java.util.List;
 
@@ -27,7 +29,7 @@ public class TestRecommendationConfigurations extends BaseTest{
 
         //Currently support only Neo4j
         //the Neo4jGraphDb implementation by default looks for neo4jgraph.properties
-        Neo4jGraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
 
         //Each datasource impl knows hos to handle the datamodel.
         //for Neo4jGraphDb these identifiers for nodes refer to index names.
@@ -58,7 +60,7 @@ public class TestRecommendationConfigurations extends BaseTest{
     @Test
     public void testHybridItemAndUserBasedCollaborativeReco() throws Exception {
 
-        Neo4jGraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
 
         JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
         engine.setMaxRecommendations(10);
@@ -87,7 +89,7 @@ public class TestRecommendationConfigurations extends BaseTest{
     @Test
     public void testWithContentBasedRecoAlgorithm() throws Exception {
 
-        Neo4jGraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
         JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
         engine.setMaxRecommendations(10);
 
@@ -145,10 +147,13 @@ public class TestRecommendationConfigurations extends BaseTest{
 
 
         engine.addAlgorithm(new SimpleContentBasedAlgo(model), 10);
-        engine.processRecommmendations();
+        //engine.processRecommmendations();
 
         //This contains item id's with info on their weights for each criteria, for helping programmer tweak weights
-        RecommendationResult recommendationsWithTrace = engine.getRecommmendationsWithTrace("id1002", 10);
+       // RecommendationResult recommendationsWithTrace = engine.getRecommmendationsWithTrace("id1002", 10);
+
+        PojoXml pojoXml = PojoXmlFactory.createPojoXml();
+        pojoXml.saveXml(path,"D:\\obj.xml");
 
     }
 

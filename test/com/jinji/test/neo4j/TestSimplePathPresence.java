@@ -18,7 +18,7 @@ public class TestSimplePathPresence extends BaseTest{
     @Test
     public void testSingleRelationshipPath() throws Exception {
 
-        Neo4jGraphDb db = new Neo4jGraphDb();
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
 
         JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
 

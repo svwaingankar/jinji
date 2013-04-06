@@ -19,24 +19,38 @@ public class Neo4jGraphDb implements GraphDb {
 
     private static GraphDatabaseService graphService;
     private static ExecutionEngine engine;
+    private static String dbpath;
 
-
-    private static void initialize(){
-
+    public Neo4jGraphDb(String dbpath) {
+        this.dbpath = dbpath;
         if(graphService==null){
-            graphService= new GraphDatabaseFactory().newEmbeddedDatabase("D:\\shantaram\\jinji-graph");
+            graphService= new GraphDatabaseFactory().newEmbeddedDatabase(dbpath);
             engine = new ExecutionEngine(graphService);
             registerShutdownHook(graphService);
         }
     }
 
-    public static GraphDatabaseService getDB(){
-        initialize();
+    public static GraphDatabaseService getGraphService() {
         return graphService;
     }
 
-    public static ExecutionEngine getEngine(){
-        initialize();
+    public static void setGraphService(GraphDatabaseService graphService) {
+        Neo4jGraphDb.graphService = graphService;
+    }
+
+    public static String getDbpath() {
+        return dbpath;
+    }
+
+    public static void setDbpath(String dbpath) {
+        Neo4jGraphDb.dbpath = dbpath;
+    }
+
+    public GraphDatabaseService getDB(){
+        return graphService;
+    }
+
+    public ExecutionEngine getEngine(){
         return engine;
     }
 

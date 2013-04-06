@@ -23,6 +23,14 @@ public class JinjiRecommenderEngine {
         this.datasource = db;
     }
 
+    public List<JinjiRecommendationAlgorithm> getAlgorithms() {
+        return algorithms;
+    }
+
+    public void setAlgorithms(List<JinjiRecommendationAlgorithm> algorithms) {
+        this.algorithms = algorithms;
+    }
+
     public void setDatasource(GraphDb datasource) {
         this.datasource = datasource;
     }
