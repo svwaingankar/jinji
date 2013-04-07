@@ -35,9 +35,9 @@ public class TestRecommendationConfigurations extends BaseTest{
         //for Neo4jGraphDb these identifiers for nodes refer to index names.
 
         SimpleGraphDataModel simpleDataModel = new SimpleGraphDataModel();
-        simpleDataModel.setUser("users");
-        simpleDataModel.setItem("items");
-        simpleDataModel.setPrimaryRelation("bought");
+        simpleDataModel.setUser("customers");
+        simpleDataModel.setItem("movies");
+        simpleDataModel.setPrimaryRelation("rated");
         simpleDataModel.setPrimaryRelationProperty(null);
         simpleDataModel.setDatasource(db);
 
@@ -50,7 +50,48 @@ public class TestRecommendationConfigurations extends BaseTest{
         engine.processRecommmendations();
 
         //This just returns item id's
-        List<String> recommendations = engine.getRecommmendations("id1002", 10);
+        List<String> recommendations = engine.getRecommmendations("u00002", 10);
+        System.out.println("Recommended items for user u00002 : ");
+        for(String item:recommendations){
+            System.out.println(item);
+        }
+
+    }
+
+    /**
+     * Simply use the user/items nodes and the primary relationship between them to do Item based Collaborative filtering based Recommendations
+     */
+    @Test
+    public void testUserBasedCollaborative() throws Exception {
+
+        //Currently support only Neo4j
+        //the Neo4jGraphDb implementation by default looks for neo4jgraph.properties
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
+
+        //Each datasource impl knows hos to handle the datamodel.
+        //for Neo4jGraphDb these identifiers for nodes refer to index names.
+
+        SimpleGraphDataModel simpleDataModel = new SimpleGraphDataModel();
+        simpleDataModel.setUser("customers");
+        simpleDataModel.setItem("movies");
+        simpleDataModel.setPrimaryRelation("rated");
+        simpleDataModel.setPrimaryRelationProperty(null);
+        simpleDataModel.setDatasource(db);
+
+
+        JinjiRecommenderEngine engine = new JinjiRecommenderEngine(db);
+
+        engine.setMaxRecommendations(10);
+        engine.addAlgorithm(new UserBasedCollaborativeAlgo(simpleDataModel), 10);
+
+        engine.processRecommmendations();
+
+        //This just returns item id's
+        List<String> recommendations = engine.getRecommmendations("u00002", 10);
+        System.out.println("Recommended items for user u00002 : ");
+        for(String item:recommendations){
+            System.out.println(item);
+        }
 
     }
 
@@ -106,7 +147,7 @@ public class TestRecommendationConfigurations extends BaseTest{
         //    compare ages of 2 users to decide if they are similar (User-User)
         //    compare language of a movie and the languages understood by a user (User-Item)
 
-        // These *Similarity Factors Relationships* are then used to generate the final *Recommendation Relation* between a User and an Item.
+        // These *Similarity Factors Relationships* are then used to genreate the final *Recommendation Relation* between a User and an Item.
 
         // Similarity Factors can either be given to Engine by the programmer or can be created and maintained by the Engine itself
 
@@ -121,9 +162,9 @@ public class TestRecommendationConfigurations extends BaseTest{
         // Engine calculated Similarity Factors
         // These relationships will be calculated and stord based on info provided.   the engine is responsible for creating/updating these relationships
 
-            // SimpleNodeProperty, assigns weight or 0 based on whether property matches . eg-compare gener of 2 movies
-            // the engine will read the property gener on the Item nodes (since item to item type)
-            model.createSimilarityFactor(SimilarityFactor.Type.ItemToItem, 10, new SimpleNodeProperty("gener"));
+            // SimpleNodeProperty, assigns weight or 0 based on whether property matches . eg-compare genre of 2 movies
+            // the engine will read the property genre on the Item nodes (since item to item type)
+            model.createSimilarityFactor(SimilarityFactor.Type.ItemToItem, 10, new SimpleNodeProperty("genre"));
 
             // NumericNodeProperty assigns weight based on difference between the property, eg users with same age have weight 100%, user with 1 years difference have 90%
             model.createSimilarityFactor(SimilarityFactor.Type.UserToUser, 10, new NumericNodeProperty("age"));

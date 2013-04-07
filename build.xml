@@ -22,7 +22,7 @@
         </javac>
     </target>
 
-    <target name="dist" depends="compile" description="generate the distribution">
+    <target name="dist" depends="compile" description="genreate the distribution">
         <copy todir="${dist}/lib">
             <fileset dir="lib">
                 <exclude name="**/junit.jar"/>

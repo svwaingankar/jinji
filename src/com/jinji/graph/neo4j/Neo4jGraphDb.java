@@ -55,6 +55,19 @@ public class Neo4jGraphDb implements GraphDb {
     }
 
 
+    public Iterator<Map<String,Object>> executeQuery(String query) throws Exception {
+        long start, end;
+        try {
+            start= System.currentTimeMillis();
+            ExecutionResult result = getEngine().execute(query);
+            end= System.currentTimeMillis();
+            return result.iterator();
+        }
+        catch(Exception e) {
+            throw new Exception("Error executing query",e);
+        }
+    }
+
     public Iterator<Map<String,Object>> executeQuery(String query, Map<String, Object> params) throws Exception {
         long start, end;
         try {

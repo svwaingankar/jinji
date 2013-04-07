@@ -2,7 +2,9 @@ package com.jinji.test.neo4j;
 
 import com.jinji.graph.neo4j.Neo4jGraphDb;
 import com.jinji.graph.neo4j.Neo4jGraphUtil;
+import org.junit.After;
 import org.junit.BeforeClass;
+import org.neo4j.cypher.javacompat.ExecutionEngine;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -26,7 +28,9 @@ public class BaseTest {
         try{
 
 
-            Neo4jGraphUtil util = new Neo4jGraphUtil(new Neo4jGraphDb("D:\\shantaram\\jinji-graph"));
+            Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
+            destroyGraph(db);
+            Neo4jGraphUtil util = new Neo4jGraphUtil(db);
 
             FileInputStream fstream = new FileInputStream("D:\\shantaram\\jinji\\trunk\\config\\users.txt");
 
@@ -106,4 +110,11 @@ public class BaseTest {
 
         return props;
     }
+
+
+    public static void destroyGraph(Neo4jGraphDb db) {
+        String deleteAll="START n=node(*) MATCH n-[r?]-() WHERE ID(n) <> 0 DELETE n,r";
+        ExecutionEngine engine = new ExecutionEngine(db.getDB());
+        engine.execute(deleteAll);
+           }
 }

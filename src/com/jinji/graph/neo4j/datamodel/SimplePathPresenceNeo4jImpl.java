@@ -3,6 +3,8 @@ package com.jinji.graph.neo4j.datamodel;
 import com.jinji.graph.GraphDb;
 import com.jinji.graph.neo4j.QueryRegistry;
 import com.jinji.graph.neo4j.Neo4jGraphDb;
+import com.jinji.recommender.Node;
+import com.jinji.recommender.Relation;
 import com.jinji.recommender.RelationshipPath;
 import com.jinji.recommender.SimilarityFactor;
 import org.neo4j.graphdb.Transaction;
@@ -24,8 +26,6 @@ public class SimplePathPresenceNeo4jImpl extends SimilarityFactor {
         this.path = path;
     }
 
-
-
     @Override
     public void calculate(GraphDb datasource) throws Exception {
 
@@ -34,11 +34,9 @@ public class SimplePathPresenceNeo4jImpl extends SimilarityFactor {
 
         try {
 
-            Map<String, Object> params = new HashMap<String, Object>();
-            params.put("startIndex",getStartIndex());
-            params.put("endIndex",getEndIndex());
+            String query = simplePathPresenceSimilarityCalc();
+            graph.executeQuery(query);
 
-            graph.executeQuery(QueryRegistry.simplePathPresenceSimilarityCalc(path), params);
             tx.success();
         }
         catch(Exception e) {
@@ -48,6 +46,42 @@ public class SimplePathPresenceNeo4jImpl extends SimilarityFactor {
         finally {
             tx.finish();
         }
+
+    }
+
+    public String simplePathPresenceSimilarityCalc() {
+
+
+        StringBuilder query = new StringBuilder();
+        query.append("START node1=node:"+getStartIndex()+"('*:*'),node2=node:"+getEndIndex()+"('*:*') ")
+                .append("where node1<>node2 ")
+                .append("AND node1");
+
+        if(path.getRelationships().size()>path.getNodes().size()){
+
+            int count=0;
+
+            for(int i=0;i<path.getNodes().size();i++){
+
+                Relation relation = path.getRelationships().get(i);
+                Node node = path.getNodes().get(i);
+
+                query.append(relation.getString());
+                if(node==null)
+                    query.append("()");
+
+            }
+            Relation relation = path.getRelationships().get(path.getRelationships().size()-1);
+            query.append(relation.getString());
+
+
+        }
+        query.append("node2 ")
+                .append("CREATE UNIQUE node1-[r:"+getId()+"]-node2 ")
+                .append("set r.value="+getWeight());
+
+        return query.toString();
+
 
     }
 }

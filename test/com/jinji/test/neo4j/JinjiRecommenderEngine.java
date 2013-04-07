@@ -49,15 +49,14 @@ public class JinjiRecommenderEngine {
         }
     }
 
-    public List<String> getRecommmendations(String id1002, int count) {
+    public List<String> getRecommmendations(String user, int count) throws Exception {
 
-        List<String> algoIds = new ArrayList<String>();
-        for (JinjiRecommendationAlgorithm algo: algorithms){
-
-            algoIds.add(algo.getId());
+        DatasourceRecoProcessor engineImpl = null;
+        if(datasource.getDataSourceId().equals("Neo4j")){
+            engineImpl = new Neo4jRecommendationProcessor(datasource);
         }
+        return engineImpl.getRecommendations(user,count,algorithms);
 
-        return null;
     }
 
     /**

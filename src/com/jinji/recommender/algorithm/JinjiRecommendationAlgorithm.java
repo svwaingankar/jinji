@@ -13,7 +13,7 @@ public interface JinjiRecommendationAlgorithm {
     public void setMultiplyingFactor(int multiplyingFactor);
     public int getMultiplyingFactor();
     public abstract GraphDataModel getModel();
-    public void processRecommendations();
+    public void processRecommendations() throws Exception;
     public String getId();
 
 }

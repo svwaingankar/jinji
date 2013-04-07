@@ -13,6 +13,7 @@ public interface GraphDataModel {
     public void setDatasource(GraphDb datasource);
     public GraphDb getDatasource();
     public void processSimilarityFactors() throws Exception;
-
+    public String getUser();
+    public String getItem();
 
 }

@@ -17,19 +17,17 @@ public class TestSimpleNodeProperty extends BaseTest{
 
     @Test
     public void testSimpleNodeCalculation() throws Exception {
-                                   /*
-        Neo4jGraphDb db = new Neo4jGraphDb();
 
-        JinjiRecommenderEngine engine = new JinjiRecommenderEngine();
-        engine.setDatasource(db);
-        SimpleNodeProperty itemSim = new SimpleNodeProperty("gener");
+        Neo4jGraphDb db = new Neo4jGraphDb("D:\\shantaram\\jinji-graph");
+
+
+        SimpleNodeProperty itemSim = new SimpleNodeProperty("genre");
         itemSim.setWeight(10);
-        itemSim.setId("j_i_");
-        itemSim.setModel(engine);
+        itemSim.setId("i1");
         itemSim.setStartIndex("movies");
         itemSim.setEndIndex("movies");
 
-        itemSim.calculate();     */
+        itemSim.calculate(db);
 
     }
 

@@ -31,10 +31,11 @@ public class SimpleNodePropertyNeo4jImpl extends SimilarityFactor {
 
         try {
 
-            Map<String, Object> params = new HashMap<String, Object>();
-            params.put("indexName",getStartIndex());
-            params.put("property",property);
-            graph.executeQuery(QueryRegistry.simpleNodePropertySimilarityCalc(), params);
+            String query = resetNodePropertySimilarityCalc();
+            graph.executeQuery(query);
+
+            query = simpleNodePropertySimilarityCalc();
+            graph.executeQuery(query);
             tx.success();
         }
         catch(Exception e) {
@@ -53,4 +54,28 @@ public class SimpleNodePropertyNeo4jImpl extends SimilarityFactor {
     public void setProperty(String property) {
         this.property = property;
     }
+
+
+    public String simpleNodePropertySimilarityCalc() {
+
+        StringBuilder query = new StringBuilder();
+        query.append("START node1=node:"+getStartIndex()+"('*:*'),node2=node:"+getEndIndex()+"('*:*') ")
+                .append("where node1<>node2 AND node1."+property+"=node2."+property+" ")
+                .append("CREATE UNIQUE node1-[r:"+getId()+"]-node2 ")
+                .append("set r.value="+getWeight());
+        return query.toString();
+
+    }
+
+    public String resetNodePropertySimilarityCalc() {
+
+        StringBuilder query = new StringBuilder();
+        query.append("START node1=node:"+getStartIndex()+"('*:*'),node2=node:"+getEndIndex()+"('*:*') ")
+                .append("where node1<>node2 AND node1."+property+"<>node2."+property+" ")
+                .append("CREATE UNIQUE node1-[r:"+getId()+"]-node2 ")
+                .append("set r.value=0");
+        return query.toString();
+
+    }
+
 }

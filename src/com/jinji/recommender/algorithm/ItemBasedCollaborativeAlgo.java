@@ -35,12 +35,12 @@ public class ItemBasedCollaborativeAlgo implements JinjiRecommendationAlgorithm 
     }
 
     @Override
-    public void processRecommendations() {
+    public void processRecommendations() throws Exception {
         impl.processRecommendations();
     }
 
     @Override
     public String getId() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return impl.getId();
     }
 }

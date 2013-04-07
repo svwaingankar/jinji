@@ -50,6 +50,7 @@ public class SimilarityFactorModel {
         if(similarityFactor!=null){
             similarityFactor.setEndIndex(endIndexName);
             similarityFactor.setStartIndex(startIndexName);
+            similarityFactor.setWeight(multiplyingFactor);
             similarityFactor.calculate(datasource);
         }
 

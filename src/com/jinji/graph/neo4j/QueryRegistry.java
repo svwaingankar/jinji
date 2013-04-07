@@ -10,36 +10,20 @@ import java.util.Map;
 public class QueryRegistry {
 
 
-    public static String simpleNodePropertySimilarityCalc() {
-        /*
-        START node1=node:movies('*:*'),node2=node:movies('*:*')
-        where node1<>node2 AND node1.gener<>node2.gener
-        CREATE UNIQUE node1-[r:j_sim]-node2
-        set r.gener=10
-        RETURN node1.id,node2.id,r.gener
-         */
-        StringBuilder query = new StringBuilder();
-        query.append("START node1=node:movies('*:*'),node2=node:movies('*:*') ")
-                .append("where node1<>node2 AND node1.gener<>node2.gener ")
-                .append("CREATE UNIQUE node1-[r:j_sim1]-node2 ")
-                .append("set r.gener=10 ");
-        return query.toString();
-
-    }
 
     public static String simplePathPresenceSimilarityCalc(RelationshipPath path) {
 
                 /*
         START node1=node:movies('*:*'),node2=node:movies('*:*')
-        where node1<>node2 AND node1.gener<>node2.gener AND
+        where node1<>node2 AND node1.genre<>node2.genre AND
         node1-[:language]->()<-[:language]-node2
         CREATE UNIQUE node1-[r:j_sim]-node2
-        set r.gener=10
-        RETURN node1.id,node2,node2.id,r.gener
+        set r.genre=10
+        RETURN node1.id,node2,node2.id,r.genre
          */
         StringBuilder query = new StringBuilder();
         query.append("START node1=node:movies('*:*'),node2=node:movies('*:*') ")
-                .append("where node1<>node2 AND node1.gener<>node2.gener ")
+                .append("where node1<>node2 AND node1.genre<>node2.genre ")
                 .append("AND node1");
 
         if(path.getRelationships().size()>path.getNodes().size()){

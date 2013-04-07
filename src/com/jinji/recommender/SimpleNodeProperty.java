@@ -27,7 +27,12 @@ public class SimpleNodeProperty extends SimilarityFactor {
     public void calculate(GraphDb datasource) throws Exception {
 
         if(datasource.getDataSourceId().equals("Neo4j")){
-            new SimpleNodePropertyNeo4jImpl(property).calculate(datasource);
+            SimpleNodePropertyNeo4jImpl impl = new SimpleNodePropertyNeo4jImpl(property);
+            impl.setEndIndex(endIndex);
+            impl.setStartIndex(startIndex);
+            impl.setId(id);
+            impl.setWeight(weight);
+            impl.calculate(datasource);
         }
 
     }

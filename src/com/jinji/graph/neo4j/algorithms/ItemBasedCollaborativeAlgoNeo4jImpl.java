@@ -1,8 +1,15 @@
 package com.jinji.graph.neo4j.algorithms;
 
+import com.jinji.graph.neo4j.Neo4jGraphDb;
+import com.jinji.graph.neo4j.Neo4jGraphUtil;
 import com.jinji.recommender.algorithm.JinjiRecommendationAlgorithm;
 import com.jinji.recommender.datamodel.GraphDataModel;
 import com.jinji.recommender.datamodel.SimpleGraphDataModel;
+import org.neo4j.graphdb.Transaction;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Jinji - https://github.com/svwaingankar/jinji
@@ -12,11 +19,13 @@ import com.jinji.recommender.datamodel.SimpleGraphDataModel;
  */
 public class ItemBasedCollaborativeAlgoNeo4jImpl implements JinjiRecommendationAlgorithm {
 
-    GraphDataModel model;
+    SimpleGraphDataModel model;
+    Neo4jGraphDb db;
     int multiplyingFactor;
 
     public ItemBasedCollaborativeAlgoNeo4jImpl(GraphDataModel simpleDataModel) {
-        this.model = simpleDataModel;
+        this.model = (SimpleGraphDataModel) simpleDataModel;
+        this.db = (Neo4jGraphDb) this.model.getDatasource();
     }
 
     public GraphDataModel getModel() {
@@ -24,30 +33,83 @@ public class ItemBasedCollaborativeAlgoNeo4jImpl implements JinjiRecommendationA
     }
 
     @Override
-    public void processRecommendations() {
-        calculateItemToItemSimilarity();
-        calculateUserToUserSimilarity();
+    public void processRecommendations() throws Exception {
+        calculateItemToItem();
         calculateUserToItemReco();
-    }
-
-    private void calculateUserToItemReco() {
-
 
     }
 
-    private void calculateUserToUserSimilarity() {
+    private void calculateUserToItemReco() throws Exception {
 
+        Transaction tx= db.getDB().beginTx();
+        try {
+
+            String query = userToItemForItemBased();
+
+            Map<String, Object> props = new HashMap<String, Object>();
+            db.executeQuery(query,props);
+
+            Iterator<Map<String, Object>> resultIt = db.executeQuery(query, props);
+            int count=100;
+            if (resultIt.hasNext()) {
+                Map<String, Object> row = resultIt.next();
+
+                props = new HashMap<String, Object>();
+                props.put("user",row.get("user"));
+                props.put("item",row.get("item"));
+                props.put("value",count--);
+
+                new Neo4jGraphUtil(db).createUniqueRelationship((String)row.get("user"),model.getUser(),(String)row.get("item"),model.getItem(),"u2i_"+getId(),(count--)*multiplyingFactor+"");
+
+            }
+
+            tx.success();
+        }
+        catch(Exception e) {
+            tx.failure();
+            throw e;
+        }
+        finally {
+            tx.finish();
+        }
 
     }
 
-    private void calculateItemToItemSimilarity() {
+    private String userToItemForItemBased() {
 
+        StringBuilder query = new StringBuilder();
 
+        query.append("START u1=node:customers('*:*') ");
+        query.append("MATCH u1-[r1:rated]->i1-[r2:i2i]-i2 ");
+        query.append("RETURN u1.id as user ,i2.id as item order by r1.VALUE desc,r2.value ");
+
+        return query.toString();
+
+    }
+
+    private void calculateItemToItem() throws Exception {
+        Transaction tx= db.getDB().beginTx();
+        try {
+
+            String query = simpleItemBasedWithProperty();
+
+            Map<String, Object> props = new HashMap<String, Object>();
+            db.executeQuery(query,props);
+
+            tx.success();
+        }
+        catch(Exception e) {
+            tx.failure();
+            throw e;
+        }
+        finally {
+            tx.finish();
+        }
     }
 
     @Override
     public String getId() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return "ica";
     }
 
     public int getMultiplyingFactor() {
@@ -58,14 +120,15 @@ public class ItemBasedCollaborativeAlgoNeo4jImpl implements JinjiRecommendationA
         this.multiplyingFactor = multiplyingFactor;
     }
 
-    //start n=node(#{m.neo_id}) match (n)<-[r1:rated]-(x)-[r2:rated]->(y) where (r1.stars>3 and r2.stars>3) return y.title,count(*) order by count(*) desc limit 5
-
-    public static String simpleItemBasedWithNoProperty() {
+    private String simpleItemBasedWithProperty() {
 
         StringBuilder query = new StringBuilder();
-        query.append("start n=node(#{m.neo_id}) match (n)<-[r1:rated]-(x)-[r2:rated]->(y) where (r1.stars>3 and r2.stars>3) return y.title,count(*) order by count(*) desc limit 5 ");
-        return query.toString();
 
+
+        query.append("start n1=node:"+model.getItem()+"('*:*') match (n1)<-[r1:"+model.getPrimaryRelation()+"]-(x)-[r2:"+model.getPrimaryRelation()+"]->(n2) where n1<>n2 AND r1.VALUE = r2.VALUE ");
+        query.append("with n1,n2,count(*) as c create unique n1-[rr:i2i]->n2 SET rr.value=c ");
+
+        return query.toString();
     }
 
 
